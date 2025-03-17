@@ -29,6 +29,3 @@ def create_item(new_item: Item):
 @app.get("/items/",response_model=List[Item])
 def fetch_all():
     return list(db.values())
-
- 
-
